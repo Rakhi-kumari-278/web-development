@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* descendent selector ==============  */
+        /* div p{
+            color:blue;
+        }
+        */
+       
+       /* combinator selector=====================  */
+        /* .a>p{
+            color:blueviolet;
+        } */
+        /* .b>p{
+            color:green;
+        } */
+        /* h2>p{
+            color: aqua;
+        } */
+
+        /* immediate sibling selector============ */
+         /* div+p{
+            color:yellow;
+         } */
+
+
+        
+        /* General sibling selector============ */
+         div~p{
+            color:aqua;
+        } 
+    </style> 
+</head>
+<body>
+   <!-- <div>descendent child selector
+    <p>paragraph one</p>
+    <p>paragraph two</p>
+    <div>
+    <p>paragraph three</p>
+</div>
+    <p>paragraph four</p>
+   </div> -->
+
+   <!-- <div class="a">direct child selector
+    <p>one</p>
+    <p>two</p>
+    <div class="b">
+        <p>three</p>
+    </div>
+    <p>four</p>
+   </div> -->
+
+   <div>
+    <p>paragraph one</p>
+    <p>paragraph two</p>
+    <p>paragraph three</p>
+   </div>
+   <p>paragraph four</p>
+   <p>paragraph five</p>
+   <h1>
+    <p>helllo</p>
+   </h1>
+
+     
+</body>
+</html>

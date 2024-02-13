@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .first{
+        background-color:yellow;
+        /* background-color: red; */
+        /* background-color: #0000ff; */
+        /* background-color: rgb(0, 255, 0); */
+        /* background-color: rgba(0, 255, 0, 0.5); */
+        /* background-color: transparent; */
+        /* background-color: hsl(0, 100%, 50%); */
+        /* background-color: hsla(0, 100%, 50%, 0.1); */
+    }
+    .second{
+        background-image: url(./images/lotus.jpeg);
+        /* background-image: url('img_tree.gif'), url('paper.gif'); */
+        /* background-image: conic-gradient(red, yellow, green); */
+        /* background-image: linear-gradient( red, yellow, blue); */
+        /* background-image: radial-gradient(red, green, blue); */
+        /* background-image: repeating-conic-gradient(red 10%, yellow 20%); */
+        /* background-image: repeating-linear-gradient(red, yellow 10%, green 20%); */
+        /* background-image: repeating-radial-gradient(red, yellow 10%, green 15%); */
+        height: 200px;
+        width:200px;
+    }
+    .third{
+        background-image: url(./images/air.jpg);
+        height: 200px;
+        width:200px;
+        /* background-position: left top; */
+        background-position: left center;
+        /* background-position: left bottom; */
+        /* background-position: right top; */
+        /* background-position: right center; */
+        /* background-position: right bottom; */
+        /* background-position: center top; */
+        /* background-position: 10% 40%; */
+        /* background-position: 50px 100px; */ 
+    }
+    .four{
+        background-image: url(./images/air.jpg);
+        height: 200px;
+        width:200px;
+        background-size: auto;
+        /* background-size: contain; */
+        /* background-size: cover; */
+        /* background-size: 50%; */
+        /* background-size: 30px; */
+        /* background-size: 60px; */
+    }
+    .five{
+        background-image: url(./images/air.jpg);
+        height: 1000px;
+        width:1000px;
+        background-repeat: repeat-x;
+        /* background-repeat: repeat-y; */
+        /* background-repeat: no-repeat; */
+        /* background-repeat: space; */
+        /* background-repeat: round; */
+    }
+    .six{
+        background-image: url(./images/lotus.jpeg);
+        height: 200px;
+        width:200px;
+        border: 8px dotted blue;
+        padding: 20px;
+        color: aqua;
+        /* background-origin: padding-box; */
+        /* background-origin: border-box; */
+        background-origin: content-box;
+    }
+    .seven{
+        background-color:pink;
+        height: 200px;
+        width:200px;
+        border: 8px dotted blue;
+        padding: 20px;
+        color: aqua;
+        /* background-clip: border-box; */
+        /* background-clip: padding-box; */
+        background-clip: content-box;
+
+    }
+    .eight{
+        background-image: url("./images/jantar.jpeg");
+        height:1400px;
+        width:600px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* background-attachment: scroll; */
+        /* background-attachment: local; */
+        /* background-attachment:inherit; */
+        /* background-attachment:initial; */
+       
+    }
+    .nine{
+        background-image: url("./images/jantar.jpeg"),url("./images/air.jpg");
+        height:1400px;
+        width:600px;
+        background-repeat: no-repeat;
+        
+        background-blend-mode: normal;
+        /* background-blend-mode: screen; */
+        /* background-blend-mode: multiply; */
+        /* background-blend-mode: darken; */
+        /* background-blend-mode: overlay; */
+        /* background-blend-mode: color-dodge; */
+        /* background-blend-mode: lighten; */
+        /* background-blend-mode: color; */
+        /* background-blend-mode: saturation; */
+        /* background-blend-mode: luminosity; */
+    }
+    </style>
+</head>
+<body>
+    <h1>BACKGROUND PROPERTIES</h1>
+    <p>background-color
+        background-image
+        background-position
+        background-size
+        background-repeat
+        background-origin
+        background-clip
+        background-attachment</p>
+        <div class="first">Today is Friday</div>
+         <br>
+        <div class="second"></div><br>
+        <div class="third">hi there</div><br>
+
+        <div class="four"></div><br>
+        <div class="five"></div>
+        <div class="six">heyyyyyy</div><br>
+        <div class="seven">background-clip</div><br>
+        <div class="eight">
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+            <p>The background-image is fixed. Try to scroll down the page.</p>
+        </div>
+        <div class="nine"></div>
+
+</body>
+</html>

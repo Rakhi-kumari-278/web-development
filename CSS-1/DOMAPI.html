@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Falling In Love With Javascript</h1>
+    <div class="container">
+      <div class="item item1" id="itemone">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div id="itemfour" class="item item4">4</div>
+      <div class="item item5">5</div>
+    </div>
+    <p>hello i'm paragraph</p>
+
+    <script>
+        //----getElementById
+       /* let divone = document.getElementById("itemone");
+        console.log(divone);
+        divone.style.backgroundColor="red";
+        divone.style.fontSize="30px";*/
+
+        //----getElementsByClassName
+        /*let div_child = document.getElementsByClassName("item");            
+        console.log(div_child);
+        div_child[0].style.backgroundColor="red";
+        div_child[1].style.backgroundColor="yellow";
+        div_child[2].style.fontSize="30px";
+        div_child[3].style.margin="10px";
+        div_child[4].style.padding="20px";  */ 
+
+        //-----------getElementsByTagName
+       /* let divs = document.getElementsByTagName("div");
+        console.log(divs);*/
+
+      /*  for(let prop of divs){
+            prop.style.backgroundColor="yellow";
+            prop.style.fontSize="30px";
+        }*/
+
+       /* divs[0].style.backgroundColor="yellow";
+        divs[0].style.padding="20px";
+        divs[2].style.fontSize="30px";*/
+
+        //FLEXBOX EXAMPLE
+        /*divs[0].style.backgroundColor = "yellow";
+        divs[0].style.padding = "10px";
+        divs[0].style.display = "flex";
+        divs[0].style.gap = "10px";
+        divs[0].style.justifyContent = "space-between";
+
+        for (let i = 1; i < divs.length; i++) {
+                  divs[i].style.backgroundColor = "blue";
+
+          divs[i].style.fontSize = "32px";
+          divs[i].style.padding = "10px";
+          divs[i].style.color = "white";
+        }*/
+        
+        //----Query selector---
+        /*let ele = document.querySelector(".item");
+        ele.style.fontSize = "52px";
+        console.log(ele);*/
+
+        //query selector all
+
+       /* let eles = document.querySelectorAll(".item");
+        for (let ref of eles) {
+           ref.style.fontWeight = "bold";
+         }
+        console.log(eles); */
+
+        //CREATE AND INSERT ELEMENTS
+
+        //createElement
+
+        /*let sec = document.createElement("section");
+        console.log(sec);*/
+
+        //appendChild
+
+     /* let sec = document.createElement("section");
+        let pdiv = document.getElementsByClassName("container")[0];
+        pdiv.appendChild(sec);
+        
+        //insertadjacentelement
+        pdiv.insertAdjacentElement("beforebegin", sec);
+        pdiv.insertAdjacentElement("afterend", sec);
+        pdiv.insertAdjacentElement("afterbegin", sec);
+        pdiv.insertAdjacentElement("beforeend", sec);
+        */
+        
+       /* let p = document.getElementsByTagName("p")[0];
+        p.textContent="Hello";*/
+
+       /* let p = document.getElementsByTagName("p")[0];
+        p.textContent +="Hello";*/
+
+        /*let p = document.getElementsByTagName("p")[0];
+        p.innerHTML="<strong>Hello</strong>";*/
+        
+
+        // let divs = document.getElementsByClassName("item");
+        // divs[2].setAttribute("id", "chombi");
+
+        // let divs = document.getElementsByClassName("item");
+        // divs[2].removeAttribute("id");
+        
+        // let div_child = document.getElementsByClassName("item");
+        // console.log(div_child[1].parentElement);
+
+        // let div_child = document.getElementsByClassName("item");
+        // console.log(div_child[2].nextElementSibling);
+
+        // let div_child = document.getElementsByClassName("item");
+        // console.log(div_child[2].previousElementSibling);
+
+        // let pdiv = document.getElementsByClassName("container")[0];
+        // console.log(pdiv.children);
+
+        // let pdiv = document.getElementsByClassName("container")[0];
+        // console.log(pdiv.childNodes);
+
+        let p = document.getElementsByTagName("p")[0];
+        p.remove();
+        
+    
+    
+        
+        
+        
+        </script>
+</body>
+</html>

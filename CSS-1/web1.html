@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            /*border: 3px solid rgb(23, 23, 23);*/
+            box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.544);
+            padding: 15px;
+            background-color: rgba(220, 220, 220, 0.626);
+        }
+        header .logo{
+            height: 65px;
+            width:65px;
+            border-radius: 50%;
+            background-image: url(/images/th.jpg);
+            background-position: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            
+        }
+        nav{
+            display: inline-block;
+            /*border:2px solid red;*/
+            padding: 5px;
+            position: relative;
+            top:-25px;
+            left:350px;
+        }
+        nav ul li{
+            display: inline-block;
+            text-transform: capitalize;
+            font-size: 22px;
+            font-weight: bold;
+            margin-right: 25px;
+            cursor: pointer;
+        }
+        nav ul li:first-of-type::after,nav ul li:nth-of-type(2)::after{
+            content: " |";
+            display: inline;
+            margin-left: 5px;
+            color:black;
+        }
+        nav ul li:hover{
+            color:#1c93e4;
+        }
+        nav ul li:first-of-type::after,nav ul li:nth-of-type(2)::after{
+            color:black;
+        }
+        nav ul li:last-of-type{
+            margin-right: 0;
+        }
+        header .icons{
+            display: inline-block;
+            /*border: 2px solid blue;*/
+            position: relative;
+            padding: 5px;
+            top:-26px;
+            left:630px;
+            color:grey;
+            font-size: 27px;
+            cursor: pointer;
+        }
+        
+        header .icons :first-child:hover{
+            color:#0f89e7;
+        }
+        header .icons :nth-child(2):hover{
+            color:#1c93e4;
+        }
+        header .icons :last-child:hover{
+            background-image: linear-gradient(#5955d1,#b12288,#ee5309,#f09441);
+            background-clip: text;
+            color:transparent;
+        }
+        .page-1{
+            /*border:2px solid red;*/
+            padding: 20px;
+        }
+        .page-1 .about{
+            border: 2px solid blue;
+            height: 200px;
+            width:300px;
+            display: inline-block;
+            margin:40px 40px 0px 100px;
+            padding: 30px 40px 40px 40px;
+        }
+        
+        .page-1 .profile-image{
+            height: 300px;
+            width:480px;
+            background-image: url("/images/soil.jpg"); 
+            margin:-230px 0px 20px 700px;
+            border:3px solid yellowgreen;
+            background-repeat: no-repeat;
+   
+        }
+
+
+        .round{
+           
+            border-radius: 50%;
+            display: inline-block;
+        
+        }
+        .round-1{
+            height: 40px;
+            width: 40px; 
+            font-size: 20px;
+            margin-left:70px;
+            background-color:yellow;
+        }
+        .round-2{
+            height: 50px;
+            width: 50px; 
+            font-size: 20px;
+            margin:-100px 0px 20px 10px;
+            background-color:red;
+        }
+        .round-3{
+            height: 50px;
+            width: 50px; 
+            margin-top: -250px;
+            font-size: 20px;
+            background-color: rgb(16, 104, 227);
+        }
+        
+        footer{
+            border: 3px solid #5955d1;
+             padding: 10px;
+             background-color: black;
+        }
+        
+        .item{
+            height: 160px;
+            width: 300px;
+            text-align: center;
+            font-size:50px;
+            display: inline-block;
+            margin:30px 30px 30px 110px;
+            
+            border: 3px solid #b12288;
+            background-color: black;
+
+
+    
+        }
+        .item1{
+            font-size: 20px;
+            padding: 10px 10px 10px 10px;
+            
+            color: aliceblue;
+        }
+        .item2{
+            font-size: 20px;
+            padding: 10px 10px 10px 10px;
+            color: aliceblue;
+        }
+        .item3{
+            font-size: 20px;
+            padding: 10px 10px 10px 10px;
+            color: aliceblue;
+        }
+
+
+    
+    </style>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/c2eceb92da.js" crossorigin="anonymous"></script>
+    <header>
+        <div class="logo"></div>
+        <nav><ul type="none">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul></nav>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i> &nbsp;
+            <i class="fa-brands fa-twitter"></i> &nbsp;
+            <i class="fa-brands fa-instagram"></i>
+
+        </div>
+         
+    </header>
+    <section class="page-1">
+        <div class="about">
+            <h1>Header Footer</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non optio labore eos minus deleniti placeat.
+
+            </p>
+        </div>
+        <div class="profile-image"></div>
+        <div class="round round-1"></div>
+        <div class="round round-2" ></div>
+        <div class="round round-3"></div>
+    </section>
+    <footer>
+        
+        <div class="item item1">
+            <h4>Block Header</h4>
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit excepturi hic distinctio voluptatibus corporis deserunt</div>
+        <div class="item item2">
+            <h4>Block Header</h4>
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit excepturi hic distinctio voluptatibus corporis deserunt</div>
+        <div class="item item3">
+            <h4>Block Header</h4>
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit excepturi hic distinctio voluptatibus corporis deserunt </div>
+       
+    
+</body>
+</html>

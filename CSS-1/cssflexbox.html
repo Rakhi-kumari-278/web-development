@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            display:flex; /*to make a container flexiable apply this property*/
+            width: 1000px;
+            height: 500px;
+            background-color: antiquewhite;
+            /*flex-direction: row; by default (it is used to specify the direction of flex box)*/
+            /* flex-direction: column-reverse;  */
+            /* flex-direction: row-reverse; */
+            /* flex-direction:column; */
+
+           /* flex-wrap: nowrap; by default (if space is not available in the flexbox then we can shift the flex item in nextline.)*/
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            flex-flow: row nowrap; /* it work for both flex-direction & flex-wrap*/
+            gap:20px;/*it is used to provide space between flex items*/
+            justify-content:center;/* 1 flex-start\ 2 flex-end \3 center\ 4 space-between \5 space-around \6 space-evenly */
+            align-items: flex-end;/*flex-start*/
+
+
+       
+        }  
+        .child1{
+            width: 100px;
+            height: 100px;
+            background-color:blueviolet;
+            text-align: center;
+        }
+        .child2{
+            width: 100px;
+            height: 100px;
+            background-color:red;
+            text-align: center;
+        }
+        .child3{
+            width: 100px;
+            height: 100px;
+            background-color:orange;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">A</div>
+        <div class="child2">B</div>
+        <div class="child3">C</div>
+    </div>
+</body>
+</html>

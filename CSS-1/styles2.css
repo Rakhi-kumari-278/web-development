@@ -1,0 +1,1541 @@
+   *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica";
+}
+/* main section */
+@media screen and (min-width:768.5px) and (max-width:1500px) {
+header{
+    /* border:2px solid red; */
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+header .netflix-logo{
+    height: 80px;
+    width:171px;    
+    background-image: url("/images/netflix-logo.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* border: 2px solid yellow; */
+}
+nav{
+    /* border:2px solid red; */
+    display: flex;
+    padding: 1vw;
+    gap:25px;
+    position: relative;
+
+}
+.globe-icon{
+    position: absolute;
+    top: 28px;
+    left: 21px;
+    height: 20px;
+    width:20px;
+    background-image: url("/images/icons8-globe-100.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.select-language{
+    background-color: rgba(0, 0, 0, 0.631);
+    color:white;
+    padding: 5px 5px 5px 30px;
+    border: 1.5px solid #585858;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 3vw;
+    width:9vw;
+    
+}
+
+.select-language option{
+    font-size: 15px;
+}
+nav button{
+    height: 3vw;
+    width:9vw;
+    background-color: #e50914;
+    border:none;
+    font-size: 18px;
+    color:white;
+    text-transform: capitalize;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: #c70711;
+}
+
+.homepage{
+    /* height: 600px; */
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.584),rgba(0, 0, 0, 0.486)),url("https://assets.nflxext.com/ffe/siteui/vlv3/bff5732c-7d13-45d1-9fab-476db25a1827/46bc87cd-4c4c-4485-8b93-d5f21c581d56/IN-en-20230710-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    gap:2vw;
+    padding: 15vw 0;
+    border-bottom: 8px solid #585858;
+    
+}
+.homepage h1{
+    font-size: 3.5vw;
+    font-weight: 900;
+    
+}
+.homepage h3{
+    font-size: 2vw;
+    
+}
+.homepage p{
+    font-size: 1.8vw;
+}
+.Form-netflix{
+    /* border: 2px solid yellow; */
+    width:45%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Form-netflix input{
+    width:65%;
+    background-color: rgba(0, 0, 0, 0.662);
+    color:white;
+    border: none;
+    padding: 15px;
+    border: 1.5px solid #585858;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    
+}
+.Form-netflix button{
+    width:32%;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-size: 22px;
+    font-weight: 600;
+}
+.Form-netflix input:hover{
+    outline:2px solid white;
+}
+.Form-netflix button:hover{
+    background-color: #c70711;
+}
+
+/* 2nd section */
+
+.netflix-tv{
+    /* border:2px solid yellow; */
+    display: flex;
+    gap:3vw;
+    padding: 4vw 2vw;
+    background-color: black;
+    color:white;
+    border-bottom: 8px solid #585858;
+    flex-wrap: wrap;
+    
+    
+}
+.netflix-tv article:first-of-type{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2vw;
+    width:40vw;
+    padding-left:100px;
+}
+.netflix-tv article:first-of-type h1{
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+.netflix-tv article:first-of-type p{
+    font-size: 1.8vw;
+}
+.netflix-tv article:last-of-type{
+    /* border:2px solid green; */
+    width:50vw;
+    height: 33vw;
+    position: relative;
+    overflow: hidden;
+   
+
+}
+.netflix-tv article:last-of-type .tv-img{
+    height: 100%;
+    width:100%;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+.netflix-tv article:last-of-type video{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    left:48px;
+}
+
+/* 3rd section */
+.netflix-tv2{
+    /* border:2px solid yellow; */
+    display: flex;
+    gap:3vw;
+    padding: 4vw 2vw;
+    background-color: black;
+    color:white;
+    border-bottom: 8px solid #585858;
+    flex-wrap: wrap;
+    
+    
+}
+.netflix-tv2 article:last-of-type{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2vw;
+    width:40vw;
+    padding-right: 50px;
+}
+.netflix-tv2 article:last-of-type h1{
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+.netflix-tv2 article:last-of-type p{
+    font-size: 1.8vw;
+}
+.netflix-tv2 article:first-of-type{
+    /* border:2px solid green; */
+    width:50vw;
+    height: 33vw;
+    position: relative;
+    overflow: hidden;
+    left:50px;
+   
+
+}
+.netflix-tv2 article:first-of-type .tv-img2{
+    height: 90%;
+    width:80%;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    left:100px;
+}
+.load{
+height: 70px;
+width:280px;
+border: #f1eded81 solid 2px;
+margin-top: 300px;
+margin-left: 140px;
+display: inline-block;
+background-color: black;
+border-radius: 10px;
+
+}
+.load1{
+    /* border: #e50914 solid 2px; */
+    height: 58px;
+    width:60px;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center; 
+    position: relative;
+    top:3px;
+    left:6px;
+    
+    
+}
+
+.load2{
+    /* border: aqua solid 2px; */
+    height: 50px;
+    width:120px;
+    font-size: 12px;
+    position: relative;
+    top:-40px;
+    left:80px;
+    
+}
+.load3{
+    /* border:yellow solid 2px; */
+    height: 40px;
+    width:40px;
+    position: relative;
+    top:-100px;
+    left:225px;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 4th section */
+.netflix-tv3{
+    /* border:2px solid yellow; */
+    display: flex;
+    gap:3vw;
+    padding: 4vw 2vw;
+    background-color: black;
+    color:white;
+    border-bottom: 8px solid #585858;
+    flex-wrap: wrap;
+    
+    
+}
+.netflix-tv3 article:first-of-type{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2vw;
+    width:40vw;
+    padding-left: 80px;
+    padding-bottom:70px;
+}
+.netflix-tv3 article:first-of-type h1{
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+.netflix-tv3 article:first-of-type p{
+    font-size: 1.8vw;
+}
+.netflix-tv3 article:last-of-type{
+    /* border:2px solid green; */
+    width:50vw;
+    height: 33vw;
+    position: relative;
+    overflow: hidden;
+   
+
+}
+.netflix-tv3 article:last-of-type .tv-img3{
+    height: 80%;
+    width:80%;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top:50px;
+}
+.netflix-tv3 article:last-of-type video{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 100px;
+    top:50px;
+
+}
+
+/* 5th section */
+.netflix-tv4{
+    /* border:2px solid yellow; */
+    display: flex;
+    gap:3vw;
+    padding: 4vw 2vw;
+    background-color: black;
+    color:white;
+    border-bottom: 8px solid #585858;
+    flex-wrap: wrap;
+    
+    
+}
+.netflix-tv4 article:last-of-type{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2vw;
+    width:40vw;
+    padding-right: 80px;
+}
+.netflix-tv4 article:last-of-type h1{
+    font-size: 2.5vw;
+    font-weight: 900;
+    
+}
+.netflix-tv4 article:last-of-type p{
+    font-size: 1.8vw;
+}
+.netflix-tv4 article:first-of-type{
+    /* border:2px solid green; */
+    width:50vw;
+    height: 33vw;
+    position: relative;
+    overflow: hidden;
+   
+
+}
+.netflix-tv4 article:first-of-type .tv-img4{
+    height: 80%;
+    width:80%;
+    background-image: url("https://occ-0-4079-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    top:50px;
+}
+
+/* 6th section */
+.FAQ{
+    background-color: black;
+    color:white;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap:3vw;
+    border-bottom: 8px solid #585858;
+}
+.FAQ h1{
+    text-transform: capitalize;
+    font-size: 3vw;
+    font-weight: 800;
+    text-align: center;
+
+}
+.FAQ .accordian{
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+    padding-left: 50px;
+    padding-right:50px; 
+    
+}
+.FAQ .accordian details{
+    font-size: 1.7vw;
+    background-color: #494949;
+    padding: 2vw 2vw 2vw 2vw;
+    
+
+
+}
+.FAQ .accordian details summary{
+    font-size: 2vw;
+    margin-bottom: 1.3vw;
+    
+    background-color: #494949;
+
+}
+.FAQ .accordian details:hover{
+    background-color:#303030bc;
+    cursor: pointer;
+}
+.FAQ .accordian details:hover summary{
+    
+    background-color: #262525bc;
+}
+.form-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2vw;
+    margin: 2vw 0;
+}
+.form-con p{
+    font-size: 1.8vw;
+}
+footer{
+    /* border:2px solid red; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 6vw 5vw 6vw 2vw;
+    gap:2vw;
+    color:white;
+}
+footer>p:first-of-type a{
+    color:white;
+}
+footer article{
+    /* border:2px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vw 15vw 0.5vw 0.5vw;
+
+}
+footer article ul{
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+}
+footer article ul li a{
+    color:white;
+
+}
+.lang-netflix{
+    position: relative;
+}
+.gi-1{
+    position: absolute;
+    top:7px;
+    left:9px;
+
+}
+}
+
+
+
+/* ------------------for mobile ------------------------------------------------------
+----------------------------------------------------------------------------------------------*/
+@media screen and (min-width:300px) and (max-width:468.5px) {
+    header{
+        /* border:2px solid red; */
+        background-color: rgba(0, 0, 0, 0);
+        color:white;
+        padding: 1vw;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+    }
+    header .netflix-logo{
+        height: 200px;
+        width:120px;    
+        background-image: url("/images/netflix-logo.webp");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /* border: 2px solid yellow; */
+    }
+    nav{
+        /* border:2px solid red; */
+        display: flex;
+        padding: 2vw;
+        gap:25px;
+        position: relative;
+    
+    }
+    .globe-icon{
+        position: absolute;
+        
+        left: 19px;
+        height: 20px;
+        width:20px;
+        background-image: url("/images/icons8-globe-100.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    .select-language{
+        background-color: rgba(0, 0, 0, 0.631);
+        color:white;
+        padding: 5px 5px 5px 30px;
+        border: 1.5px solid #585858;
+        border-radius: 5px;
+        font-size: 18px;
+        height: 8vw;
+        width:30vw;
+        
+    }
+    
+    .select-language option{
+        font-size: 18px;
+    }
+    nav button{
+        height: 7vw;
+        width:20vw;
+        background-color: #e50914;
+        border:none;
+        font-size: 18px;
+        color:white;
+        text-transform: capitalize;
+        padding: 5px 8px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    nav button:hover{
+        background-color: #c70711;
+    }
+    
+    .homepage{
+        /* height: 600px; */
+        /* background-image: linear-gradient(to top,rgba(0, 0, 0, 0.584),rgba(0, 0, 0, 0.486)),url("https://assets.nflxext.com/ffe/siteui/vlv3/bff5732c-7d13-45d1-9fab-476db25a1827/46bc87cd-4c4c-4485-8b93-d5f21c581d56/IN-en-20230710-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: center; */
+        background-color: black;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        gap:6vw;
+        padding: 15vw 0;
+        border-bottom: 8px solid #585858;
+        padding-left: 40px;
+        padding-top:100px;
+        padding-right: 40px;
+        
+    }
+    .homepage h1{
+       
+        font-size: 6.8vw;
+        font-weight: 900;
+        
+        
+    }
+    .homepage h3{
+        font-size: 5vw;
+        
+    }
+    .homepage p{
+        font-size: 4.5vw;
+        
+
+    }
+    .Form-netflix{
+        /* border: 2px solid yellow; */
+        width:45%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap:4vw;
+    }
+    .Form-netflix input{
+        width:500%;
+        background-color: rgba(0, 0, 0, 0.662);
+        color:white;
+        border: none;
+        padding: 15px;
+        border: 1.5px solid #585858;
+        border-radius: 5px;
+        font-size: 18px;
+        outline: none;
+       
+        
+        
+    }
+    .Form-netflix button{
+        width:120%;
+        height: 40px;
+        background-color: #e50914;
+        border: none;
+        border-radius: 5px;
+        color:white;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .Form-netflix input:hover{
+        outline:2px solid white;
+    }
+    .Form-netflix button:hover{
+        background-color: #c70711;
+    }
+    
+    /* 2nd section */
+    
+    .netflix-tv{
+        /* border:2px solid yellow; */
+        display: flex;
+        gap:8vw;
+        padding: 30vw 4vw;
+        background-color: black;
+        color:white;
+        border-bottom: 8px solid #585858;
+        flex-wrap: wrap;
+        
+        
+    }
+    .netflix-tv article:first-of-type{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:2vw;
+        width:80vw;
+        padding-left:50px;
+    }
+    .netflix-tv article:first-of-type h1{
+        font-size: 6.8vw;
+        font-weight: 900;
+    }
+    .netflix-tv article:first-of-type p{
+        font-size: 4.0vw;
+    }
+    .netflix-tv article:last-of-type{
+        /* border:2px solid green; */
+        width:60vw;
+        height: 35vw;
+        position: relative;
+        overflow: hidden;
+        left:70px;
+       
+    
+    }
+    .netflix-tv article:last-of-type .tv-img{
+        height: 100%;
+        width:100%;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+    }
+    .netflix-tv article:last-of-type video{
+        width: 90%;
+        height: 100%;
+        position: relative;
+        left:48px;
+    }
+    
+    /* 3rd section */
+    .netflix-tv2{
+        /* border:2px solid yellow; */
+        display: flex;
+        gap:3vw;
+        padding: 25vw 4vw;
+        background-color: black;
+        color:white;
+        border-bottom: 8px solid #585858;
+        flex-wrap: wrap;
+    
+        
+        
+    }
+    .netflix-tv2 article:last-of-type{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:2vw;
+        position:relative;
+        top:-190px;
+
+    }
+    .netflix-tv2 article:last-of-type h1{
+        
+        font-size: 7.0vw;
+        font-weight: 900;
+    }
+    .netflix-tv2 article:last-of-type p{
+        font-size: 4.5vw;
+    }
+    .netflix-tv2 article:first-of-type{
+        /* border:2px solid green; */
+        width:60vw;
+        height: 35vw;
+        position: relative;
+        left:50px;
+        top:100px;
+       
+    
+    }
+    .netflix-tv2 article:first-of-type .tv-img2{
+        height: 180%;
+        width:150%;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+        left:-40px;
+        
+    }
+    .load{
+    height: 60px;
+    width:230px;
+    border: #f1eded81 solid 2px;
+    margin-top: 300px;
+    margin-left: 140px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+    position:relative;
+    top:-110px;
+    left:-70px;
+    
+    }
+    .load1{
+        /* border: #e50914 solid 2px; */
+        height: 38px;
+        width:35px;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center; 
+        position: relative;
+        top:3px;
+        left:6px;
+        
+        
+    }
+    
+    .load2{
+        /* border: aqua solid 2px; */
+        height: 20px;
+        width:60px;
+        font-size: 12px;
+        position: relative;
+        top:-38px;
+        left:80px;
+        
+    }
+    .load3{
+        /* border:yellow solid 2px; */
+        height: 30px;
+        width:30px;
+        position: relative;
+        top:-50px;
+        left:180px;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    /* 4th section */
+    .netflix-tv3{
+        /* border:2px solid yellow; */
+        display: flex;
+        gap:3vw;
+        padding: 25vw 8vw;
+        background-color: black;
+        color:white;
+        border-bottom: 8px solid #585858;
+        flex-wrap: wrap;
+        
+        
+    }
+    .netflix-tv3 article:first-of-type{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:4vw;
+   
+    }
+    .netflix-tv3 article:first-of-type h1{
+        font-size: 7.5vw;
+        font-weight: 900;
+    }
+    .netflix-tv3 article:first-of-type p{
+        font-size: 4.0vw;
+    }
+    .netflix-tv3 article:last-of-type{
+        /* border:2px solid green; */
+        width:70vw;
+        height: 43vw;
+        position: relative;
+        overflow: hidden;
+        left:-20px;
+       
+    
+    }
+    .netflix-tv3 article:last-of-type .tv-img3{
+        height: 80%;
+        width:80%;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+        top:50px;
+        left:70px;
+    }
+    .netflix-tv3 article:last-of-type video{
+        width:55%;
+        height: 38%;
+        position: relative;
+        left: 120px;
+        top:50px;
+    
+    }
+    
+    /* 5th section */
+    .netflix-tv4{
+        /* border:2px solid yellow; */
+        display: flex;
+        padding: 13vw 4vw;
+        background-color: black;
+        color:white;
+        border-bottom: 8px solid #585858;
+        flex-wrap: wrap;
+        
+        
+    }
+    .netflix-tv4 article:last-of-type{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:2vw;
+        padding-left:8px;
+        padding-right:8px;
+        position: relative;
+        top:-270px;
+    }
+    .netflix-tv4 article:last-of-type h1{
+        font-size: 7.0vw;
+        font-weight: 900;
+        
+    }
+    .netflix-tv4 article:last-of-type p{
+        font-size: 4.8vw;
+    }
+    .netflix-tv4 article:first-of-type{
+        /* border:2px solid green; */
+        width:100vw;
+        height: 70vw;
+        position: relative;
+        overflow: hidden;
+       left:-29px;
+       top:180px;
+    
+    }
+    .netflix-tv4 article:first-of-type .tv-img4{
+        height: 80%;
+        width:80%;
+        background-image: url("https://occ-0-4079-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+        left: 80px;
+        
+    }
+    
+    /* 6th section */
+    .FAQ{
+        background-color: black;
+        color:white;
+        padding-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        gap:4vw;
+        border-bottom: 8px solid #585858;
+        padding-left: 4vw;
+        padding-bottom: 30px;;
+    
+    }
+    .FAQ h1{
+        text-transform: capitalize;
+        font-size: 8vw;
+        font-weight: 800;
+        text-align: center;
+    
+    }
+    .FAQ .accordian{
+        display: flex;
+        flex-direction: column;
+        gap:1vw;
+        padding-left: 50px;
+        padding-right:50px; 
+        
+    }
+    .FAQ .accordian details{
+        font-size: 5vw;
+        background-color: #494949;
+        padding: 2vw 2vw 2vw 2vw;
+        
+    
+    
+    }
+    .FAQ .accordian details summary{
+        font-size: 5vw;
+        margin-bottom: 1.3vw;
+        background-color: #494949;
+    
+    }
+    .FAQ .accordian details:hover{
+        background-color:#303030bc;
+        cursor: pointer;
+    }
+    .FAQ .accordian details:hover summary{
+        
+        background-color: #262525bc;
+    }
+    .form-con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2vw;
+        margin: 2vw 0;
+    }
+    .form-con p{
+        font-size: 4.8vw;
+    }
+    footer{
+        /* border:2px solid red; */
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 17vw 0vw 18vw 4vw;
+        gap:6vw;
+        color:white;
+    }
+    footer>p:first-of-type a{
+        color:white;
+    }
+    footer article{
+        /* border:2px solid yellow; */
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5vw 15vw 0.5vw 0.5vw;
+    
+    }
+    footer article ul{
+        display: flex;
+        flex-direction: column;
+        gap:2vw;
+    }
+    footer article ul li a{
+        color:white;
+    
+    }
+    .lang-netflix{
+        position: relative;
+    }
+    .gi-1{
+        position: absolute;
+        top:7px;
+        left:9px;
+    
+    }
+}
+
+
+
+/* ------------------for tablet -------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------*/
+@media screen and (min-width:469px) and (max-width:768.5px) {
+    header{
+        /* border:2px solid red; */
+        background-color: rgba(0, 0, 0, 0);
+        color:white;
+        padding: 1vw;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+    }
+    header .netflix-logo{
+        height: 80px;
+        width:171px;    
+        background-image: url("/images/netflix-logo.webp");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /* border: 2px solid yellow; */
+    }
+    nav{
+        /* border:2px solid red; */
+        display: flex;
+        padding: 1vw;
+        gap:25px;
+        position: relative;
+    
+    }
+    .globe-icon{
+        position: absolute;
+        top: 28px;
+        left: 21px;
+        height: 20px;
+        width:20px;
+        background-image: url("/images/icons8-globe-100.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    .select-language{
+        background-color: rgba(0, 0, 0, 0.631);
+        color:white;
+        padding: 5px 5px 5px 30px;
+        border: 1.5px solid #585858;
+        border-radius: 5px;
+        font-size: 18px;
+        height: 3vw;
+        width:9vw;
+        
+    }
+    
+    .select-language option{
+        font-size: 18px;
+    }
+    nav button{
+        height: 3vw;
+        width:9vw;
+        background-color: #e50914;
+        border:none;
+        font-size: 18px;
+        color:white;
+        text-transform: capitalize;
+        padding: 5px 8px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    nav button:hover{
+        background-color: #c70711;
+    }
+    
+    .homepage{
+        /* height: 600px; */
+        background-image: linear-gradient(to top,rgba(0, 0, 0, 0.584),rgba(0, 0, 0, 0.486)),url("https://assets.nflxext.com/ffe/siteui/vlv3/bff5732c-7d13-45d1-9fab-476db25a1827/46bc87cd-4c4c-4485-8b93-d5f21c581d56/IN-en-20230710-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        gap:2vw;
+        padding: 15vw 0;
+        border-bottom: 8px solid #585858;
+        
+    }
+    .homepage h1{
+        font-size: 3.5vw;
+        font-weight: 900;
+        
+    }
+    .homepage h3{
+        font-size: 2vw;
+        
+    }
+    .homepage p{
+        font-size: 1.8vw;
+    }
+    .Form-netflix{
+        /* border: 2px solid yellow; */
+        width:45%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .Form-netflix input{
+        width:65%;
+        background-color: rgba(0, 0, 0, 0.662);
+        color:white;
+        border: none;
+        padding: 15px;
+        border: 1.5px solid #585858;
+        border-radius: 5px;
+        font-size: 18px;
+        outline: none;
+        
+    }
+    .Form-netflix button{
+        width:32%;
+        background-color: #e50914;
+        border: none;
+        border-radius: 5px;
+        color:white;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .Form-netflix input:hover{
+        outline:2px solid white;
+    }
+    .Form-netflix button:hover{
+        background-color: #c70711;
+    }
+    
+    /* 2nd section */
+    
+    .netflix-tv{
+        /* border:2px solid yellow; */
+        display: flex;
+        gap:3vw;
+        padding: 4vw 2vw;
+        background-color: black;
+        color:white;
+        border-bottom: 8px solid #585858;
+        flex-wrap: wrap;
+        
+        
+    }
+    .netflix-tv article:first-of-type{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:2vw;
+        width:40vw;
+        padding-left:100px;
+    }
+    .netflix-tv article:first-of-type h1{
+        font-size: 2.5vw;
+        font-weight: 900;
+    }
+    .netflix-tv article:first-of-type p{
+        font-size: 1.8vw;
+    }
+    .netflix-tv article:last-of-type{
+        /* border:2px solid green; */
+        width:50vw;
+        height: 33vw;
+        position: relative;
+        overflow: hidden;
+       
+    
+    }
+    .netflix-tv article:last-of-type .tv-img{
+        height: 100%;
+        width:100%;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+    }
+    .netflix-tv article:last-of-type video{
+        width: 90%;
+        height: 100%;
+        position: relative;
+        left:48px;
+    }
+    
+    /* 3rd section */
+    .netflix-tv2{
+        /* border:2px solid yellow; */
+        display: flex;
+        gap:3vw;
+        padding: 4vw 2vw;
+        background-color: black;
+        color:white;
+        border-bottom: 8px solid #585858;
+        flex-wrap: wrap;
+        
+        
+    }
+    .netflix-tv2 article:last-of-type{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:2vw;
+        width:40vw;
+        padding-right: 50px;
+    }
+    .netflix-tv2 article:last-of-type h1{
+        font-size: 2.5vw;
+        font-weight: 900;
+    }
+    .netflix-tv2 article:last-of-type p{
+        font-size: 1.8vw;
+    }
+    .netflix-tv2 article:first-of-type{
+        /* border:2px solid green; */
+        width:50vw;
+        height: 33vw;
+        position: relative;
+        overflow: hidden;
+        left:50px;
+       
+    
+    }
+    .netflix-tv2 article:first-of-type .tv-img2{
+        height: 90%;
+        width:80%;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+        left:100px;
+    }
+    .load{
+    height: 70px;
+    width:280px;
+    border: #f1eded81 solid 2px;
+    margin-top: 300px;
+    margin-left: 140px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+    
+    }
+    .load1{
+        /* border: #e50914 solid 2px; */
+        height: 58px;
+        width:60px;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center; 
+        position: relative;
+        top:3px;
+        left:6px;
+        
+        
+    }
+    
+    .load2{
+        /* border: aqua solid 2px; */
+        height: 50px;
+        width:120px;
+        font-size: 12px;
+        position: relative;
+        top:-40px;
+        left:80px;
+        
+    }
+    .load3{
+        /* border:yellow solid 2px; */
+        height: 40px;
+        width:40px;
+        position: relative;
+        top:-100px;
+        left:225px;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    /* 4th section */
+    .netflix-tv3{
+        /* border:2px solid yellow; */
+        display: flex;
+        gap:3vw;
+        padding: 4vw 2vw;
+        background-color: black;
+        color:white;
+        border-bottom: 8px solid #585858;
+        flex-wrap: wrap;
+        
+        
+    }
+    .netflix-tv3 article:first-of-type{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:2vw;
+        width:40vw;
+        padding-left: 80px;
+        padding-bottom:70px;
+    }
+    .netflix-tv3 article:first-of-type h1{
+        font-size: 2.5vw;
+        font-weight: 900;
+    }
+    .netflix-tv3 article:first-of-type p{
+        font-size: 1.8vw;
+    }
+    .netflix-tv3 article:last-of-type{
+        /* border:2px solid green; */
+        width:50vw;
+        height: 33vw;
+        position: relative;
+        overflow: hidden;
+       
+    
+    }
+    .netflix-tv3 article:last-of-type .tv-img3{
+        height: 80%;
+        width:80%;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+        top:50px;
+    }
+    .netflix-tv3 article:last-of-type video{
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left: 100px;
+        top:50px;
+    
+    }
+    
+    /* 5th section */
+    .netflix-tv4{
+        /* border:2px solid yellow; */
+        display: flex;
+        gap:3vw;
+        padding: 4vw 2vw;
+        background-color: black;
+        color:white;
+        border-bottom: 8px solid #585858;
+        flex-wrap: wrap;
+        
+        
+    }
+    .netflix-tv4 article:last-of-type{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:2vw;
+        width:40vw;
+        padding-right: 80px;
+    }
+    .netflix-tv4 article:last-of-type h1{
+        font-size: 2.5vw;
+        font-weight: 900;
+        
+    }
+    .netflix-tv4 article:last-of-type p{
+        font-size: 1.8vw;
+    }
+    .netflix-tv4 article:first-of-type{
+        /* border:2px solid green; */
+        width:50vw;
+        height: 33vw;
+        position: relative;
+        overflow: hidden;
+       
+    
+    }
+    .netflix-tv4 article:first-of-type .tv-img4{
+        height: 80%;
+        width:80%;
+        background-image: url("https://occ-0-4079-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: 1;
+        left: 50px;
+        top:50px;
+    }
+    
+    /* 6th section */
+    .FAQ{
+        background-color: black;
+        color:white;
+        padding: 4vw;
+        display: flex;
+        flex-direction: column;
+        gap:3vw;
+        border-bottom: 8px solid #585858;
+    }
+    .FAQ h1{
+        text-transform: capitalize;
+        font-size: 3vw;
+        font-weight: 800;
+        text-align: center;
+    
+    }
+    .FAQ .accordian{
+        display: flex;
+        flex-direction: column;
+        gap:1vw;
+        padding-left: 50px;
+        padding-right:50px; 
+        
+    }
+    .FAQ .accordian details{
+        font-size: 1.7vw;
+        background-color: #494949;
+        padding: 2vw 2vw 2vw 2vw;
+        
+    
+    
+    }
+    .FAQ .accordian details summary{
+        font-size: 2vw;
+        margin-bottom: 1.3vw;
+        
+        background-color: #494949;
+    
+    }
+    .FAQ .accordian details:hover{
+        background-color:#303030bc;
+        cursor: pointer;
+    }
+    .FAQ .accordian details:hover summary{
+        
+        background-color: #262525bc;
+    }
+    .form-con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2vw;
+        margin: 2vw 0;
+    }
+    .form-con p{
+        font-size: 1.8vw;
+    }
+    footer{
+        /* border:2px solid red; */
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 6vw 5vw 6vw 2vw;
+        gap:2vw;
+        color:white;
+    }
+    footer>p:first-of-type a{
+        color:white;
+    }
+    footer article{
+        /* border:2px solid yellow; */
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5vw 15vw 0.5vw 0.5vw;
+    
+    }
+    footer article ul{
+        display: flex;
+        flex-direction: column;
+        gap:1vw;
+    }
+    footer article ul li a{
+        color:white;
+    
+    }
+    .lang-netflix{
+        position: relative;
+    }
+    .gi-1{
+        position: absolute;
+        top:7px;
+        left:9px;
+    
+    } 
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+

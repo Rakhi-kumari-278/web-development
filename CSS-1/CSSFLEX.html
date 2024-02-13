@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+        }
+        .container{
+            background-color: aqua;
+            display: flex;
+            height:1000px;
+            /* flex-direction: row;
+            flex-wrap:wrap; */
+            flex-flow: row wrap;
+            gap: 10px;
+            /* justify-content: flex-start; */
+            align-items :flex-start;
+            align-content: space-evenly;
+            
+        }
+        .child{
+            height: 200px;
+            width:200px;
+        }
+        .child1{
+            background-color: blue;
+            order:0;
+        }
+        .child2{
+            background-color: blueviolet;
+            order:2;
+            align-self:flex-end ;
+        }
+        .child3{
+            background-color: chartreuse;
+            order:1;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS FLEX BOX</h1>
+    <div class="container">
+        <div class="child child1">A</div>
+        <div class="child child2">B</div>
+        <div class="child child3">C</div>
+        <!-- <div class="child child1">D</div>
+        <div class="child child2">E</div>
+        <div class="child child3">F</div>
+        <div class="child child1">G</div>
+        <div class="child child2">H</div>
+        <div class="child child3">I</div>
+        <div class="child child1">J</div>
+        <div class="child child2">K</div>
+        <div class="child child3">L</div> -->
+    </div>
+</body>
+</html>

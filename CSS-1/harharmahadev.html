@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
+        .container{
+            height: 720px;
+            font-size:120px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:30px;
+            background-image: url(mahadev.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+           }
+           .child {
+            opacity: 0.5;
+            color: white;
+            animation: scale-up 800ms var(--d) linear infinite; 
+             text-shadow: 2px 2px 15px ;
+             }
+             @keyframes scale-up{
+                25%{
+                    opacity: 1;
+                    scale: 1.5;
+                }
+                50%{
+                    scale: 1;
+                }
+             }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child" style="--d:100ms">HAR</div>
+        <div class="child"style="--d:400ms">HAR</div>
+        <div class="child" style="--d:800ms">MAHADEV</div>
+    </div>
+</body>
+</html>

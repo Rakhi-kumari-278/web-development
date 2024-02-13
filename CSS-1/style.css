@@ -1,0 +1,13 @@
+ p,div{
+    background-color: aqua;
+    
+    font-size: 20px;
+ }
+.marker{
+    color:purple;
+}
+
+#pen{
+
+color:green;
+}
