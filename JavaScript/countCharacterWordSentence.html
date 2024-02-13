@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            background-color: aqua;
+        }
+        button{
+            background-color:pink;
+            border-radius: 5px;
+            padding: 10px;
+ 
+        }
+        div{
+            border:2px solid blue;
+            padding: 50px;
+            width:250px;
+            background-color: yellow;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <textarea></textarea>
+        <br>
+        <button>submit</button>
+    </form>
+    <br>
+    <br>
+    <div id="container">
+        <h3 id="characters:  ">No. of Character </h3>
+        <h3 id="words:  ">No. of Words  </h3>
+        <h3 id="sentences:  ">No. of Senetence </h3>
+    </div>
+    
+</body>
+<script>
+    let textarea=document.querySelector("textarea");
+    console.log(textarea)
+    let form=document.forms[0];
+    let character=document.getElementsByTagName("h3")[0];
+    let word=document.getElementsByTagName("h3")[1];
+    let sentence=document.getElementsByTagName("h3")[2];
+
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        let data=textarea.value;
+    let no_char=data.split("").length;
+    let no_word=data.split(" ").length;
+    let no_sen=data.split(".").length-1;
+
+    character.textContent+=no_char;
+    word.textContent+=no_word;
+    sentence.textContent+=no_sen;
+    })
+</script>
+</html>

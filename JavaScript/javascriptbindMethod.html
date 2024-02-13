@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JAVASCRIPT BIND METHOD</h2>
+    <script>
+      console.log("BIND METHOD")  
+      let animal1={
+        name:"Dog",
+        age:10,
+        walk:function(a,b){
+            console.log(`${this.name} can walk & age is ${this.age}`);
+            console.log(`a is ${a}`);
+            console.log(`b is ${b}`);
+            console.log(`sum is ${a+b}`);
+        },     
+    };
+    let sit=function(a,b){
+            console.log(`${this.name} can walk & age is ${this.age}`);
+            console.log(`a is ${a}`);
+            console.log(`b is ${b}`);
+            console.log(`sum is ${a+b}`);
+        };
+
+    let animal2={
+        name:"Cat",
+        age:5,
+    };
+
+    let animal3={
+        name:"Zebra",
+        age:15,
+    };
+    
+     console.log(animal1)//return animal1 object
+
+     let result=sit.bind(animal2,20,80);
+     result();//return animal2 function outside object
+
+     let result1=sit.bind(animal3,20,90);
+     result1();//return animal3 function outside object
+
+     let result3=animal1.walk.bind(animal2,20,30);
+     result3();//return animal2 function inside object
+
+     console.log(result);//return complete function
+     </script>
+</body>
+</html>

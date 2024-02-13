@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// console.log("ARRAY TOPIC PRACTICE");
+// let arr=[];
+// console.log(arr);
+// let arr1=new Array();
+// console.log(arr1);
+// arr[0]=2;
+// arr[1]=3;
+// arr[2]=4;
+// console.log(arr);
+// console.log(arr.push(5,6,7));
+// console.log(arr);
+// console.log(arr.pop());
+// console.log(arr);
+// arr.unshift(0,1);
+// console.log(arr);
+// arr.shift();
+// console.log(arr);
+// console.log(arr.indexOf(4));
+// console.log(arr.indexOf(8));
+// console.log(arr.includes(9));
+// console.log(arr.includes(4));
+// console.log(arr.reverse());
+// console.log(arr);
+// arr.sort((a,b)=>a-b);
+// arr.sort((a,b)=>b-a);
+// console.log(arr);
+// let new_arr=arr.map(val=>{
+// console.log(val*3);
+// });
+// console.log(new_arr);
+// let arr2=arr.filter(val=>{
+//     if(val>3){
+//         return val;
+//     }
+// });
+// console.log(arr2);
+// let arr3=arr.reduce((accumulator,index,value,array)=>{
+//     return accumulator+value;
+// });
+// console.log(arr3);
+// let str="rohan";
+// let arr4=Array.from(str);
+// console.log(arr4);
+// console.log(Array.isArray(str));
+console.log("OBJECT TOPIC PRACTICE");
+let obj={};
+console.log(obj);
+let obj1=new Object();
+console.log(obj1);
+let obj3= new CreateObject("ram",78);
+function CreateObject(name,age){
+    this.name=name;
+    this.age=age;
+}
+console.log(obj3);
+
+obj.name="ram";
+obj.age=45;
+obj.city="noida";
+obj["last name"]="kumar";
+console.log(obj);
+console.log(obj.city);
+console.log(obj["city"]);
+console.log(obj["last name"]);
+
+let obj4={
+    name:"abc",
+    age:67,
+    display:function(){
+        console.log(" hello from method");
+        console.log(this.name);
+    },
+    print:()=>{
+        console.log("arrow fun")
+          console.log(obj.name);
+    },
+}
+// obj4.display()
+
+console.log(obj4);
+obj4.print()
+obj4["display"]()
+
+console.log("age" in obj4);
+// for(let prop in obj){
+//     // console.log(prop);
+//     console.log(obj4[prop]);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1>FUNCTION QUESTIONS</h1>
+    <p>1. Write a program to find square and cube of a given  number<br>
+       2. Write a program to check if a given year is leap year or not.<br>
+       3. Write a program to calculate the sum of the first 100 natural numbers<br>
+       4. Write a program to check if a given number is even or odd</p>
+    <script>
+    //1----------------------------
+    /*let num=+prompt("enter the number");
+    function Square(num){
+       console.log(num*num);
+    }
+    function Cube(num){
+        console.log(num*num*num);
+    }
+    Square(num)
+    Cube(num)*/
+
+    //2-----------------------
+   /* let year=+prompt("enter the year");
+    function findLeap(year){
+        if((year%4===0&&year%100!=0)||(year%400==0)){
+             console.log(`${year} is leap yaer`);
+        }else{
+            console.log(`${year} is not leap year`);
+        }
+    }
+findLeap(year)*/
+
+//3
+/*
+let num=+prompt("enter the range for sum of the numbers");
+function SumOfNum(num){
+    let sum=0;
+    for(let i=0;i<=num;i++){
+         sum=sum+i;
+     } 
+     console.log("sum of number "+sum);   
+}
+SumOfNum(num)
+*/
+//4 
+/*
+let num=+prompt("enter the number for even or odd");
+let result=(num)=>{
+    if(num%2==0){
+        console.log(`${num} is even number`);
+    }else{
+        console.log(`${num} is odd number`);
+    }
+}
+result(num)
+*/
+//5
+/*let num=+prompt("enter the number to find sum of even no.");
+let result=(num)=>{
+    let sum=0;
+    for(let i=1;i<=num;i++){
+      if(i%2==0){
+        sum=sum+i;
+      }
+    }
+    console.log("sum of even number "+sum);
+}
+result(num);
+*/
+//6
+/*let num=+prompt("enter the number to find sum of odd no.");
+let result=(num)=>{
+    let sum=0;
+    for(let i=1;i<=num;i++){
+      if(i%2!==0){
+        sum=sum+i;
+      }
+    }
+    console.log("sum of odd number "+sum);
+}
+result(num);
+*/
+//7
+// let num=+prompt("enter the number");
+// let result=(num)=>{
+//     let count=0;
+//     while(num!==0){
+//         if(num%10!==0){
+//             count++;
+//         }
+//         num=Math.floor(num/10);
+//     }
+    
+//     return count;
+// }
+// console.log(result(num));
+
+//let res=num==0?1:Math.floor( Math.log10(num)+1);
+//console.log(res);
+
+let num=+prompt("enter the number");
+let result=(num)=>{
+    let sum=0;
+    while(num>0){
+        if(num%10!==0){
+            sum=sum+num;
+        }
+    }
+    num=Math.floor(num/10);
+    return sum;
+}
+console.log(result(num));
+</script>
+</body>
+</html>

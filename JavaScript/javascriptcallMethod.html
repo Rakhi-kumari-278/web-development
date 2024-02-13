@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JAVASCRIPT CALL METHOD</h2>
+    <script>
+      console.log("CALL METHOD")  
+      let animal1={
+        name:"Dog",
+        age:10,
+        walk:function(a,b){
+            console.log(`${this.name} can walk & age is ${this.age}`);
+            console.log(`a is ${a}`);
+            console.log(`b is ${b}`);
+            console.log(`sum is ${a+b}`);
+        },
+      };
+    
+    let animal2={
+        name:"Cat",
+        age:5,
+    };
+    let animal3={
+        name:"Zebra",
+        age:15,
+    };
+
+animal1.walk.call(animal1,50,60);//Dog can walk 110
+animal1.walk.call(animal2,10,20);//Cat can walk 30
+animal1.walk.call(animal3,40,90);//Zebra can walk 130
+
+    </script>
+</body>
+</html>

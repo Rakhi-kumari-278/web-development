@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rest Parameter</h1>
+    <script>
+        /*
+        function SumAll(a,b,...c){
+            console.log(a*b);
+            let sum=0;
+            for(let val of c){
+                sum+=val;
+            }
+            console.log(sum);
+        }
+        SumAll(90,60,10,1,2,4,5,7,9,11);
+        */
+//Rest for array destructring
+       
+/*let arr=[10,20,30,40,50,60,70,80];
+        let[a,b,...c]=arr;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        */
+
+    // Rest for object destructring
+    /*let obj={
+        name:"Raghav",
+        age:24,
+        city:"Noida",
+        state:"UP"
+    }
+    let{name,age,...remaining}=obj;
+    console.log(name);
+    console.log(age);
+    console.log(remaining);
+       */
+
+    //   let arr=[10,20,30,40];
+    //   console.log(...arr); 
+
+    //deep copy for array;
+    /*
+    let arr1=[1,2,3,4];
+    let arr2=[...arr1];
+    console.log(arr1);
+    console.log(arr2);
+    */
+
+    //deep copy for object
+    /*let obj1={name:"ram",age:20,};
+    let obj2={...obj1};
+    console.log(obj1);
+    console.log(obj2);
+    */
+
+   /*
+   let s1={a:1,b:2,};
+   let s2={c:3,d:4,e:5,};
+   let s3={f:6};
+   let res={...s1,...s2,...s3,g:10}
+   console.log(res);
+
+   let so1=[10,20,30];
+   let so2=[40,50];
+   let so3=[60];
+   let res1=[...so1,...so2,...so3];
+   console.log(res1);
+   */
+
+  //Spread by using function
+  /*
+  function Add(x,y,z,p){
+    return x+y+z+p;
+  }
+  let arr=[10,20,30,40];
+  console.log(Add(...arr));
+  */
+
+//   let arr1=[10,20,30,40];
+//   let arr2=[100,200,400];
+//   let new_Arr=["Goodmorning",500,...arr2,700,...arr1];
+//   console.log(new_Arr);
+
+let arr=[10,20,30,40,50];
+function SumAll(...val){//rest parameter
+    console.log(val);
+    let sum=0;
+    for(let res of val){
+        sum+=res;
+    }
+    console.log(sum);
+}
+SumAll(...arr);//spread operator->value extract 
+
+//to delete key of an object
+let obj={name:"ram",age:40,city:"noida",state:"up",};
+console.log(obj);
+delete obj.city;
+console.log(obj);
+    </script>
+</body>
+</html>

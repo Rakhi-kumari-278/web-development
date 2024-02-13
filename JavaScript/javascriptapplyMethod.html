@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JAVASCRIPT APPLY METHOD</h2>
+    <script>
+      console.log("APPLY METHOD")  
+      let animal1={
+        name:"Dog",
+        age:10,
+        walk:function(a,b){
+            console.log(`${this.name} can walk & age is ${this.age}`);
+            console.log(`a is ${a}`);
+            console.log(`b is ${b}`);
+            console.log(`sum is ${a+b}`);
+        },     
+    };
+    let sit=function(a,b){
+            console.log(`${this.name} can walk & age is ${this.age}`);
+            console.log(`a is ${a}`);
+            console.log(`b is ${b}`);
+            console.log(`sum is ${a+b}`);
+        };
+
+    let animal2={
+        name:"Cat",
+        age:5,
+    };
+
+    let animal3={
+        name:"Zebra",
+        age:15,
+    };
+    
+     console.log(animal1)
+    animal1.walk.apply(animal3,[90,30]);
+    sit.apply(animal2,[20,30]);
+    sit.apply(animal3,[20]);
+    sit.apply(animal1,[25,30]);
+    </script>
+</body>
+</html>

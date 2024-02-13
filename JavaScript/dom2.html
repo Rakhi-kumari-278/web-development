@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            padding: 45px;
+            background-color: rgb(238, 255, 0);
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+        }
+        input{
+            padding:10px;
+            border-radius: 8px;
+        }
+    
+        table,tr,td,th{
+            border: 2px solid  blue;
+            border-collapse: collapse;
+        
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h4 style="color: red;">---register the data here---</h4>
+        <input type="text" id="name" placeholder="name"><br><br>
+        <input type="text" id="salary" placeholder="salary"><br><br>
+        <input type="button" id="submit" value="Submit" style="background-color: #00eeff;">
+    </form>
+    <br>
+    <br>
+    <h4 style="color: red;">---display the data in table form---</h4>
+    <table id="table" >
+        <tr>
+            <th>name</th>
+            <th>salary</th>
+        </tr>
+    </table>
+
+    <script>
+       
+        let form=document.querySelector("form");
+        // console.log(form)
+        let name=document.getElementById("name");
+        let salary=document.getElementById("salary");
+        let p=document.querySelector("p");
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            console.table(name.value);
+            console.table(salary.value);
+            p.innerHTML += `<h4>${name.value}</h4>`;
+
+        })
+        //table------------
+        document.getElementById("submit").onclick=(e)=>{
+        document.getElementById("table");    
+        // console.log(table);
+        let row=table.insertRow(-1);
+        let name1=row.insertCell(0);
+        let salary1=row.insertCell(1);
+        name1.innerHTML+=document.getElementById("name").value;
+        salary1.innerHTML+=document.getElementById("salary").value;
+        return false;
+        }
+
+
+
+    </script>
+</body>
+</html>

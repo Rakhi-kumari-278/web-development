@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array/Object Destructring in function parameter</h1>
+    <script>
+        let obj=
+        {name:"Ram",
+        age:20,
+        city:"Noida",
+        state:"U.P."
+    }
+    function display({name,age,city,state}){
+        console.log(name);
+        console.log(age);
+        console.log(city);
+        console.log(state);
+    }
+    display(obj);
+//for array
+let arr=[10,20,30,40];
+function dis([a,b,c,d,e]){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+}
+dis(arr);
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>STRING IN JAVASCRIPT</h2> 
+   <script>
+    let str="hello";
+    console.log(str);
+    str="world";
+    console.log(str);
+
+    let str1=""; //by using quotes
+    console.log(str1);
+    let str2=new String();//by using new keyword & string constructor
+    console.log(str2);
+
+    //HOW TO ACCESS CHARACTERS OF A STRING
+    let stri="hello world";
+    console.log(stri[3]);
+
+    //STRING METHODS
+    let str3="Rakhi kumari";
+    console.log(str3.toLowerCase());//output   rakhi kumari
+
+    console.log(str3.toUpperCase());//output RAKHI KUMARI
+
+    console.log(str3.includes("Rakhi"));//output true Rakhi is present
+    console.log(str3.includes("hello"));//output false hello is not present
+    
+    console.log(str3.indexOf("i",0));//output after index 0
+    console.log(str3.indexOf("i",5));//output after index 5
+    
+    console.log(str3.startsWith("H"));//output false not start with H
+    console.log(str3.startsWith("Rak"));//output true start with Rak
+    
+    console.log(str3.endsWith("H"));//output false not ends with H
+    console.log(str3.endsWith("ari"));//output false not ends with ari
+
+    console.log(str3.charCodeAt(0));//ASCII value of character at index 0
+    console.log(str3.charCodeAt(1));//ASCII value of character at index 1
+    
+    console.log(str3.charAt(0));//return character present at a particular index
+    console.log(str3.charAt(1));
+    
+    let a="Hello";
+    console.log(a.concat("","world"));//Helloworld
+
+    console.log(a.indexOf("l"))//output 2
+    console.log(a.lastIndexOf("l"))//output 3
+
+    console.log(a.match(/[a-z]/g));// ['e','l','l','o']
+    console.log(a.match(/[A-Z]/g));//['H']
+
+    console.log(a.padStart(6,"world"));//wHello
+    console.log(a.padEnd(6,"world"));//Hellow
+
+    console.log(a.repeat(3));//HelloHelloHello
+
+    console.log(a.replace("llo","y"));//Hey
+    //console.log(a.replaceAll("Hello","world"))//Hello replace to world 
+
+    console.log(a.search("o"));//4
+    
+    console.log(a.toString());//Hello
+    console.log(a.at(4));//o
+    console.log(a.valueOf())//Hello
+    console.log(a.length);//5
+
+    let b =" world ";
+    console.log(b.trim());//"world"
+    console.log(b.trimStart());//"world "
+    console.log(b.trimEnd());//" world"
+
+    let string="Rakhi";
+    console.log(string.slice(1,4));//akh
+    console.log(string.slice(0,-3));//(0,2) 
+    console.log(string.slice(0,-10));//empty
+
+    console.log(string.substring(0,3));//Rak
+    console.log(string.substring(-9,3));//(0,3) Rak
+
+    console.log(string.split(""));//convert string into array
+
+    let arr=['w','o','r','l','d'];
+
+    console.log(arr.join(""));//convert array into string
+    
+    // wap to reverse a string
+   /* let srt="hello";
+    let arr1= srt.split("");
+    let new_Arr=arr1.reverse();
+    let srt1=new_Arr.join("");
+    console.log(srt1);*/
+
+    //palindrome
+   /* let srt="mam";
+    let arr1= srt.split("");
+    let new_Arr=arr1.reverse();
+    let srt1=new_Arr.join("");
+   console.log(srt1) ;
+    if (srt==(srt1)){
+        console.log("palindrome");
+    }else{
+        console.log("no palindrome");
+    }*/
+
+    //for words
+    // let srt="hello";
+    // let Arr=srt.split(" ").length;//with space 1 without space 5
+    // console.log(Arr);
+    let srt1="i am rakhi kumari ";
+    let ARR=srt1.split(" ");
+   let res=ARR.map((value,index)=>{
+    return value[0];
+   });
+   
+   console.log(res)
+   
+
+
+
+
+   </script>
+</body>
+</html>

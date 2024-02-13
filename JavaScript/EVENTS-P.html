@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div onclick="handleButtonClick()">Hello Honney Bunny🐰</div> -->
+    <div>Hello Honney Bunny🐰</div>
+<script>
+   /*    
+    function handleButtonClick() {
+      let div = document.querySelector('div');
+      div.style.backgroundColor='red';
+    }*/
+
+
+    /* let div = document.querySelector('div');
+    div.onclick = handleButtonClick;
+
+    function handleButtonClick() {
+      div.style.backgroundColor='red';
+    }*/
+
+    let div = document.querySelector('div');
+    div.addEventListener('click',handleButtonClick)
+
+    function handleButtonClick() {
+      div.style.backgroundColor='red';
+    }
+
+
+
+</script>
+
+</body>
+</html>

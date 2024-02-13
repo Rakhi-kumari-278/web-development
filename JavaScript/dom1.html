@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <ul>
+        <li>first element</li>
+        <li>second element</li>
+        <li>third element</li>
+    </ul>
+
+
+
+
+    <script>
+        //Root Node
+        // console.log(document.documentElement);
+
+        // to see head document
+        // console.log(document.head);
+
+        // to see body document
+        // console.log(document.body);
+
+        //to see Nodelist/children with text 
+        // console.log(document.body.childNodes);
+        // for(noede of document.body.childNodes){
+        //     console.log(noede)
+        // }
+         
+        //to see children without text 
+        // console.log(document.body.children);
+        // for(node of document.body.children){
+        //     console.log(node)
+        // }
+
+        //to see first child with text
+        // console.log(document.body.firstChild);
+        //to see first element child
+        // console.log(document.body.firstElementChild);
+
+        //to see last child with text
+        // console.log(document.body.lastChild);
+        //to see last element child
+        // console.log(document.body.lastElementChild);
+        
+
+        // const childrenofBody=Array.from(document.body.childNodes);
+        // console.log(childrenofBody)
+
+        //Siblings 
+        // console.log(document.body.children[0])
+        const ultag=document.body.children[0]
+        const firstli=ultag.children[0] //output is 'first element' first child of ul tag
+        const secondli=ultag.children[1]//output is 'second element' first child of ul tag
+        console.log(ultag.nextElementSibling)//output is 'script tag' that is next element sibling of ul tag
+        console.log(firstli)
+        console.log(secondli)
+        
+        console.log("=============next part ============");
+
+
+
+    </script>
+</body>
+</html>

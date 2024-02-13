@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1{
+        color: blueviolet; 
+        font-size: 40px;
+        background-color: aqua;
+        padding:10px;
+        /* border-width: 5px;
+        border-style: groove;
+        border-color: yellow; */
+        border:5px groove yellow;
+        
+    }
+    </style>
+</head>
+<body>
+    <h1>ARRAY METHODS</h1>
+    <script>
+     //WAYS TO CREATE ARRAY-----
+     //By Using Square Bracket [] and literals
+     let arr=[];
+     console.log(arr);
+     let arr1=[10,20,30,40];
+     console.log(arr1)
+     //By Using new keyword and array constructor--
+     let arr2=new Array();
+     console.log(arr2);
+     let arr3=new Array(10,30,"hi",'c');
+     console.log(arr3);
+     arr3[4]=50;
+     arr3[6]=70;
+     console.log(arr3);
+     console.log(arr[5]);  
+     
+     console.log("===============Array methods======")
+
+     //push method
+     let array=[10,20,30,40,50];
+     console.log(array.push(60));
+     console.log(array);
+
+     //pop method
+     console.log(array.pop());
+     console.log(array);
+
+     //unshift method
+     console.log(array.unshift(89));
+     console.log(array);
+
+     //shift method
+     console.log(array.shift());
+     console.log(array);
+
+     //indexOf method
+     console.log(array.indexOf(50));
+     console.log(array.indexOf(89));
+     
+     //includes method
+     console.log(array.includes(20));
+     console.log(array.includes(89));
+
+     //length
+     console.log(array.length);
+
+     //reverse method
+     console.log(array.reverse());
+
+     //splice method
+     array.splice(1,0,89,90,91);//for inseration
+     console.log(array);
+
+     array.splice(1,2);//for deletion
+     console.log(array);
+
+     console.log(array.splice(1,2,100));// it return deleted elements & updation
+     console.log(array);
+
+     //slice method
+     let array_1=array.slice(1,4);
+     array_1[1]="hi";
+     console.log(array_1);
+     console.log(array);
+
+     //sort method 
+     array.sort((a,b)=>a-b);//ascending order
+     console.log(array);
+     array.sort((a,b)=>b-a);//descending order
+     console.log(array);
+
+     //for-in loop
+
+     for(let index in array){
+        console.log(index);
+     }
+
+     //for-of loop
+     for(let value of array){
+        console.log(value);
+     }
+     for(let value of array){//find values multiple of 5
+        console.log(value*5);
+     }
+     for(let value of array){// find values add of 20
+        console.log(value+20);
+     }
+
+     //forEach loop
+    array.forEach((value,index,array)=>{
+        console.log(value*3);
+        console.log(index);
+        console.log(array)
+     });
+
+     //map method
+     let aa=array.map(val=>val+20);
+     console.log(aa)
+
+    let half_array=array.map(val=>val/2);
+    console.log(half_array);
+
+    let array1=[10.3,34.34,56.34];
+    let decimal=array1.map(val=>Math.floor(val));
+    console.log(decimal);
+
+    let array2=["hello",21,"",0,null,true,25,27.5,undefined,true,false," "];
+    let type=array2.map(val=>typeof(val));
+    console.log(type);
+
+    let bool=array2.map(val=>Boolean(val));
+    console.log(bool);
+    
+    //filter method
+    let array4=[10,40,30,60,80,45];
+    let new_arr = array4.filter(val=>{
+        if(val>50){
+           return true; 
+        }
+    });
+    console.log(new_arr);
+   let array5=["hello","hi",0,false,60,"good"];
+    let new_arr1=array5.filter(val=>{
+        if(typeof(val)=="string"){
+            return true;
+        }
+    });
+    console.log(new_arr1);
+
+    let Arr=[2,3,4,5,6,7];
+    let ne_arr=Arr.filter(val=>{
+        if(val%2==0){
+            return true;        
+        }
+    });
+    console.log(ne_arr);
+
+    //reduce method 
+    let arr4=[60,10,20,40,30];
+    let sum=arr4.reduce((acc,val)=>{
+        return acc+val;
+    },0);
+    console.log(sum);
+
+    let sum1=arr4.reduce((acc,val)=>{
+        return acc+val;
+    });
+    console.log(sum1);
+
+    let maxNum=arr4.reduce((acc,val)=>{
+        if(val>acc){
+            acc=val}
+            return acc ;
+        
+    });
+    console.log(maxNum);
+
+
+    let minNum=arr4.reduce((acc,val)=>{
+        if(val<acc){
+            acc=val
+        }
+            return acc ;
+        
+    });
+    console.log(minNum);
+
+    //Array.from()
+    let name="rakhi";
+    let find=Array.from(name);
+    console.log(find);//string into array
+
+    //Array.isArray()
+    console.log(Array.isArray(name));//check it is array or not
+    console.log(Array.isArray(find));
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

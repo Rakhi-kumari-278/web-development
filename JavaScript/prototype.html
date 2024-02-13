@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+<script>
+    const newHero=["hello","kio"];
+    console.log(newHero);
+    function multi(num){
+        return num*3
+    }
+    console.log(multi(5));
+    multi.power=2;
+    console.log(multi.power);
+    console.log(multi.prototype);
+
+    function createUser(name,age){
+        this.name=name;
+        this.age=age;
+    }
+    createUser.prototype.increment=function(){
+        this.age++
+    }
+    createUser.prototype.printMe=function(){
+        console.log(`score is ${this.age}`);
+    }
+    const chai=new createUser("chai",67);
+    const tea=new createUser("tea",89);
+    chai.printMe()
+    chai.increment()
+
+</script>    
+</body>
+</html>

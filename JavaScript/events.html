@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: aqua;
+            font-size: 30px;
+            padding: 60px;
+            cursor: pointer;
+            height:220px;
+            width:200px;
+            border-radius: 50px;
+             justify-content: center;  
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- //give output on console -->
+   <!-- <p onclick="console.log('i am onclick')">i am paragraph</p> --
+    >
+   <!- //gives the alert message on click -->
+   <!-- <p onclick="alert('i am onclick')">i am paragraph</p> -->
+
+   <!-- //one click for output -->
+   <!-- <p onclick="changeBackgroundColor()">i am paragraph tag</p> -->
+
+   <!-- //double click for output -->
+   <!-- <p ondblclick="changeBackgroundColor()">i am paragraph tag</p>  -->
+   
+
+
+    <script>
+        
+        
+
+
+        let p=document.querySelector("p");
+
+        function changeBackgroundColor(){
+            p.style.backgroundColor="pink";
+            p.style.color="red";
+            p.style.borderRadius="50%";
+            console.log("i am listening");
+        }
+       
+        
+    
+
+
+
+
+    </script>
+</body>
+</html>

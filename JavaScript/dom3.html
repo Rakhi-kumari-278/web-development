@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>i am paragraph</p>
+    <script>
+         let p=document.querySelector("p");
+        console.log(p);
+        //  ?  first way----------------
+        p.onclick=handleClick;
+        function handleClick(e){
+            console.log(e)
+            console.log("i am clicked");
+        }
+
+        // ? second way------------------------
+        p.onclick=(e)=>{
+            console.log(e);
+            console.log("i am clicked!");
+        }
+        p.addEventListener("click",(e)=>{
+            console.log(e);
+            console.log("hello i am event listener");
+        })
+    </script>
+</body>
+</html>
