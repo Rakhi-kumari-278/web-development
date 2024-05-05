@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    Name <input type="text" name="name"autofocus required><br><br>
+    Email <input type="email" name="email" required><br><br>
+    Password <input type="password" name="password" required><br><br>
+    <br>
+    What is your favorite color?<br>
+    <input type="text" list="color" name="color-list">
+        <datalist id="color">
+            <option value="Red"></option>
+            <option value="Yellow"></option>
+            <option value="Purple"></option>
+            <option value="Pink"></option>
+            <option value="Blue"></option>
+            <option value="Green"></option>
+        </datalist>
+        <br>
+        <br>
+        Gender
+        <br>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+         <input type="radio" name="gender">Others  
+         <br>
+         <br>
+         Date of Birth : <input type="date" name="date" >
+         <br>
+         <br>
+         Resume <input type="file" multiple>
+         <br>
+         <br>
+         Github Link <input type="url">
+         <br>
+         <br>
+         Name of your College<br>
+         <input type="text" placeholder="--Select your college--" list="college" name="college-list">
+        <datalist id="college">
+            <option value="ABESIT"></option>
+            <option value="ABESEC"></option>
+            <option value="JSS College"></option>
+            <option value="Ajay Kumar Garg College"></option>
+            <option value="KIET"></option>
+            <option value="IMS Enginner College"></option>
+        </datalist>
+        <br>
+        <br>
+        Write about yourself in brief<br>
+        <textarea rows="6" cols="30">     
+        </textarea>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Parent's Details</legend>
+            <input type="text" name="name" value="Name"required><br><br>
+            <input type="email" name="email" value="Email"required><br><br>
+            <input type="tel" name="tel" value="Mobile Number" required><br><br>
+
+        </fieldset>
+    
+        <br>
+        Choose languages you know:
+        <br>
+         <input type="checkbox" name="language" id="">C<br>
+         <input type="checkbox" name="language" id="">C++<br>
+         <input type="checkbox" name="language" id="">Java<br>
+         <input type="checkbox" name="language" id="">HTML<br>
+         <input type="checkbox" name="language" id="">CSS<br>
+         <input type="checkbox" name="language" id="">Python<br>
+         <input type="checkbox" name="language" id="">JavaScript<br>
+         <input type="checkbox" name="language" id="">SQL<br>
+        <br>
+        
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset All">
+        <br>
+        <br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: orchid;
+            padding: 40px;
+        }
+        label{
+            color: blue;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        input{
+            background-color: yellow;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   <form >
+    <h2>================Important input tags============</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name..."minlength="3" maxlength="25" size="25"><br><br>
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter your valid password." required><br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your valid email..." required><br><br>
+    <label for="age">AGE</label>
+    <input type="number" id="age" placeholder="Enter age.." min="18" max="30"><br><br>
+    <label for="telephone">Mobile no</label>
+    <input type="tel" id="telephone" placeholder="Enter Mobile no." ><br><br>
+    <label for="file">file select from here...</label>
+    <input type="file" id="file" multiple><br><br>
+    <label for="range">Range</label>
+    <input type="range" id="range"><br><br>
+    <label for="color">choose color here..</label>
+    <input type="color" id="color"><br><br>
+    <label for="date">Select date</label>
+    <input type="date" id="date"><br><br>
+    <label for="time">Select time</label>
+    <input type="time" id="time"><br><br>
+    <label for="url">url</label>
+    <input type="url" id="url"><br><br>
+    <label for="search">Search here</label>
+    <input type="search" id="search"><br><br>
+    <textarea cols="40" rows="10">
+        //comment here
+    </textarea><br>
+    <br>
+    <label>Gender</label>
+    <br>
+        <input type="radio" name="gender" >Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other
+        <br>
+        <br>
+    <label>Hobbies</label>
+    <br>
+        <input type="checkbox" >playing cricket
+        <input type="checkbox">singing
+        <input type="checkbox">music
+        <br>
+        <br>   
+        <input type="text" value="ABC" readonly> 
+        <br>
+        <br>
+        <input type="text" value="ABC" disabled> 
+        <br>
+        <br>
+        
+    <input type="submit" value="Submit Form">
+    <button>RESET</button>
+   </form>
+    
+    
+</body>
+</html>
